@@ -12,16 +12,16 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link href="/wheel/css/spin.css" rel="stylesheet">
-    <link href="/wheel/css/index.css" media="all" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="/wheel/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="/wheel/js/date_random.js"></script>
+    <link href="/p1/wheel/css/spin.css" rel="stylesheet">
+    <link href="/p1/wheel/css/index.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/p1/wheel/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/p1/wheel/js/date_random.js"></script>
 
     <meta http-equiv="x-dns-prefetch-control" content="on">
-    <script src="/wheel/js/jquery.countdown.min.js">
+    <script src="/p1/wheel/js/jquery.countdown.min.js">
     <script>(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);</script> <script>function searchToObject(){var e,n,o=window.location.search.substring(1).split("&"),t={};for(n in o)if(o.hasOwnProperty(n)){if(""===o[n])continue;e=o[n].split("="),t[decodeURIComponent(e[0])]=decodeURIComponent(e[1])}return t}var eventsSender=function(){var e=searchToObject();e.esub=window.acrum_extra&&window.acrum_extra.esub||e.esub;var o={url:location.protocol+"//"+location.host+"/event/",on_focus:!0,events:{scrolled_on_site:0,clicked_on_site:0,time_on_site:0,load_begins:1,dom_loaded:0,fully_loaded:0},params:e,get_params:function(){var e,n={};for(e in o.params)o.params.hasOwnProperty(e)&&(n[e]=o.params[e]);for(e in o.events)n[e]=o.events[e];return n},sendEvents:function(e,n,o){var t=new XMLHttpRequest;t.open("POST",e,o),t.setRequestHeader("Content-type","application/json; charset=utf-8"),t.send(n)}},n=function(){o.events.scrolled_on_site=1,window.removeEventListener("scroll",n)};window.addEventListener("scroll",n);var t=function(){o.events.clicked_on_site=1,window.removeEventListener("click",t)};window.addEventListener("blur",function(){o.on_focus=!1}),window.addEventListener("focus",function(){o.on_focus=!0}),window.addEventListener("click",t),setInterval(function(){o.on_focus&&o.events.time_on_site++},1e3),document.addEventListener("DOMContentLoaded",function(){o.events.dom_loaded=1}),window.addEventListener("load",function(){o.events.fully_loaded=1}),navigator.sendBeacon=navigator.sendBeacon||o.sendEvents,window.onbeforeunload=function(){var e=JSON.stringify(o.get_params());navigator.sendBeacon(o.url,e,!1);for(var n=0;n<=1e4;n++);}}();
     </script>
-    <script src="/wheel/js/spin.js" type="text/javascript"></script>
+    <script src="/p1/wheel/js/spin.js" type="text/javascript"></script>
 
 </head>
 
@@ -265,8 +265,8 @@
               <p>Pozor!</p>
               <p> Naše webová stránka nabízí akční slevy na produkty. Zkuste své štěstí a klikněte na tlačítko "Spin" a když vyhrajete, můžete si koupit produkty se slevou! Hodně štěstí!</p>
                <div class="wheel-wrarpper">
-                 <div class="wheel"> <img class="wheel-img" src="/wheel/img/prizewheel.png">
-                  <div class="wheel-cursor"> <img src="/wheel/img/wheel-cursor.png"> <span class="cursor-text" onclick="spin();">  Spin  </span>
+                 <div class="wheel"> <img class="wheel-img" src="/p1/wheel/img/prizewheel.png">
+                  <div class="wheel-cursor"> <img src="/p1/wheel/img/wheel-cursor.png"> <span class="cursor-text" onclick="spin();">  Spin  </span>
                </div>
                  </div>
                    </div>
@@ -294,7 +294,7 @@
                          <input type="hidden" name="time_zone" value="2"></form> <h2> Počet kusů v akci je omezen <span class="red"><span class="nowdate" format="day.month.year"></span></span></h2> </div>
                           <div class="spin-result-wrapper"> <div class="pop-up-window"> <div class="close-popup"></div> <span class="pop-up-heading"> Gratulujeme! </span> <p class="pop-up-text"> Máte nárok na 50% slevu na váš nákup.</p> <a class="pop-up-button" href="#"> OK </a>
                            </div> </div>
-                           <script src="/wheel/js/spin.js" type="text/javascript"></script>
+                           <script src="/p1/wheel/js/spin.js" type="text/javascript"></script>
 
 
                 </a>
