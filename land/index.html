@@ -630,6 +630,15 @@ $(function(){
 <!--<script>-->
     <!--initITI('cs', 'assets/');-->
 <!--</script>-->
+<!-- НЕОБХОДИМЫЕ СКРИПТЫ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<!-- ПОЛУЧЕНИЕ IP ПОСЕТИТЕЛЯ -->
+<script>
+    $.getJSON("http://gd.geobytes.com/GetCityDetails?callback=?",function(t){window.ip=t.geobytesremoteip});
+</script>
+
 </body>
 
 </html>
